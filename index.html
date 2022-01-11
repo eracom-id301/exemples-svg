@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemples de SVG</title>
+  <style>
+    /* CSS pour styler le SVG nuage */
+
+    .cloud-flash .cloud,
+    .cloud-flash .flash {
+      fill: none;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .cloud-flash .cloud {
+      stroke: rgb(106, 106, 253);
+      fill: rgb(204, 229, 253)
+    }
+
+    .cloud-flash .flash {
+      stroke: #feeb15;
+    }
+
+    /* CSS pour styler les cercles de couleur */
+
+    .colorcircles circle {
+      stroke: black;
+      stroke-width: 1px;
+    }
+
+    .colorcircles circle:hover {
+      fill: blue !important;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- SVG Nuage -->
+  <svg class="cloud-flash" viewBox="0 0 18.72 18.94" width="90px" height="90px">
+    <path class="cloud"
+      d="M15.78,4.51V4.41a2.4,2.4,0,0,0-4-1.81A4.8,4.8,0,0,0,3,4.5a3.2,3.2,0,0,0,.74,6.32H15a3.2,3.2,0,0,0,.8-6.31" />
+    <polyline class="flash" points="9.83 13.27 7.28 15.82 9.82 15.82 7.2 18.44" />
+  </svg>
+
+  <!-- SVG cercles de couleur -->
+  <svg class="colorcircles" width="400px" height="300px">
+    <title>Des cercles d’opacités différentes</title>
+    <circle cx="200" cy="100" r="90" style="fill:magenta;fill-opacity:0.6;" />
+    <circle cx="140" cy="200" r="90" style="fill:cyan;fill-opacity:0.6;" />
+    <circle cx="260" cy="200" r="90" style="fill:yellow;fill-opacity:0.4;" />
+  </svg>
+
+  <!-- SVG Pot de fleurs -->
+  <img src="noun-plant-3222145.svg" />
+
+  <!-- SVG Cercle -->
+  <svg width="100" height="100" viewBox="0 0 100 100" fill="none" stroke="blue" stroke-width="10">
+    <circle cx="50" cy="50" r="40" />
+  </svg>
+
+  <!-- SVG X -->
+  <svg width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="hotpink" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="18" y1="6" x2="6" y2="18" />
+    <line x1="6" y1="6" x2="18" y2="18" />
+  </svg>
+
+  <p><strong>Sources des images:</strong>
+    Nuage de <a href="https://codepen.io/jacknumber/pen/gPpJMp"> SVG Demo</a>,
+    Cercle de couleurs de <a href="http://svground.fr/formes-de-base.php">SVGround.fr</a>,
+    Plante de <a href="https://thenounproject.com/icon/plant-3222145/">iconcheese</a>,
+    formes simples de <a href="https://iconsvg.xyz/">IconSVG</a>.
+  </p>
+</body>
+
+</html>
